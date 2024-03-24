@@ -1,0 +1,25 @@
+.timeline {
+  grid-area: news-timeline;
+
+  & .timeline__list {
+    list-style: none;
+    padding-inline-start: 1.4375rem;
+
+    background: 
+      linear-gradient(
+        to bottom, 
+        var(--bg-color) 0%,
+        var(--bg-color) 100%
+      ),
+      linear-gradient(
+        to bottom, 
+        var(--border-color) 0%,
+        var(--border-color) 50%, 
+        transparent 50%, 
+        transparent 100%
+      );
+    background-size: .25rem .75rem, 0.06rem .25rem;
+    background-position: 0.535rem 0;
+    background-repeat: no-repeat, repeat-y;
+  }
+}
