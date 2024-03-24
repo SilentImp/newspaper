@@ -1,7 +1,7 @@
 .top-article {
   display: block;
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 
   &:hover .top-article__caption {
     text-decoration: underline;
@@ -31,6 +31,10 @@
     background-color: #fff8;
     font-size: calc(var(--base-font-size) * var(--multiplier));
     line-height: 1.4;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: #0008;
+    }
   }
 
 }

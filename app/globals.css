@@ -4,9 +4,17 @@
   --gap-width: 1rem;
   --bg-color: #fff;
   --border-color: #888;
+  --text-color: #000;
+  @media (prefers-color-scheme: dark) {
+    --bg-color: #000;
+    --border-color: #ddd;
+    --text-color: #fff;
+  }
 }
 
 html body {
+  color: var(--text-color);
+  background: var(--bg-color);
   font-size: 16px;
   display: grid;
   padding-inline: var(--gap-width);
