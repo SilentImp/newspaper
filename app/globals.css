@@ -1,0 +1,28 @@
+:root {
+  --main-area-width: 37.34rem;
+  --aside-area-width: 22rem;
+  --gap-width: 1rem;
+  --bg-color: #fff;
+  --border-color: #888;
+}
+
+html body {
+  font-size: 16px;
+  display: grid;
+  padding-inline: var(--gap-width);
+  padding-block-end: 2rem;
+  justify-content: center;
+  gap: var(--gap-width);
+  grid-template-columns: minmax(1fr, 38rem);
+  grid-template-areas: 
+    "page-header" 
+    "top-news" 
+    "news-timeline";
+
+  @media (min-width: 63rem) {
+    grid-template-columns: var(--main-area-width) var(--aside-area-width);
+    grid-template-areas: 
+      "page-header page-header" 
+      "top-news news-timeline";
+  }
+}
