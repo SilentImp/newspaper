@@ -1,0 +1,9 @@
+.top-news {
+  grid-area: top-news;
+
+  & .top-news__list {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-inline-start: 1rem;
+  }
+}
