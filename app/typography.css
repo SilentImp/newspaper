@@ -1,0 +1,30 @@
+:root {
+  --multiplier: 1.618;
+  --base-font-size: 1rem;
+  --base-line-height: 1.5rem;
+}
+
+body {
+  line-height: var(--base-line-height);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  font-size: calc(var(--base-font-size) * var(--multiplier) * var(--multiplier) * var(--multiplier));
+  line-height: calc(var(--base-line-height)*4);
+}
+
+h2 {
+  font-size: calc(var(--base-font-size) * var(--multiplier) * var(--multiplier));
+  line-height: calc(var(--base-line-height)*3);
+}
+
+h3 {
+  font-size: calc(var(--base-font-size) * var(--multiplier));
+  line-height: calc(var(--base-line-height)*2);
+}
