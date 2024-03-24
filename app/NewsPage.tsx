@@ -6,6 +6,7 @@ import "./typography.css";
 import type NewsEvent from '@/types/NewsEvent';
 import { DataProvider } from "@/context/DataContext";
 import PageHeader from "./PageHeader";
+import TopNews from "./TopNews";
 
 type NewsPage = {
   items: NewsEvent[];
@@ -14,6 +15,7 @@ type NewsPage = {
 const NewsPage = ({ items }: NewsPage) => (
   <DataProvider value={items}>
     <PageHeader />
+    <TopNews />
   </DataProvider>
 );
 
