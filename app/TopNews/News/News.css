@@ -1,0 +1,12 @@
+.news {
+  margin-block: calc(var(--gap-width)/2);
+
+  & .news__link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
