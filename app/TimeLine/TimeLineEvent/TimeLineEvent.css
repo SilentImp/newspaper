@@ -1,0 +1,44 @@
+.timeline-event {
+  margin-block: calc(var(--gap-width)/2);
+  position: relative;
+
+  &:last-child::before {
+    position: absolute;
+    display: block;
+    inset: .85rem 0 0 -1.1125rem;
+    width: 1rem;
+    content: "";
+    background-color: var(--bg-color);
+  }
+
+  &::after {
+    position: absolute;
+    top: .5rem;
+    left: -1.1125rem;
+    content: "";
+    display: block;
+    width: .7rem;
+    height: .7rem;
+    background: radial-gradient(
+      circle,
+      var(--border-color) 0,
+      var(--border-color) 50%,
+      transparent 50%);
+    background-position: 0 0;
+    background-size: .5rem .5rem;
+    background-repeat: no-repeat;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .timeline-event__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    gap: .5rem;
+
+    &:hover .timeline-event__title{
+      text-decoration: underline;
+    }
+  }
+}
