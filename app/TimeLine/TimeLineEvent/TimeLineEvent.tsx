@@ -17,11 +17,13 @@ const TimeLineEvent = (
   let optionsTime: Intl.DateTimeFormatOptions = {
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: "Europe/Amsterdam",
   };
   const time = Intl.DateTimeFormat('nl-NL', optionsTime).format(date);
   const dateTime = Intl.DateTimeFormat('nl-NL', {
     dateStyle: "full",
     timeStyle: "full",
+    timeZone: "Europe/Amsterdam",
   }).format(date);
   return (
     <li className="timeline-event">
