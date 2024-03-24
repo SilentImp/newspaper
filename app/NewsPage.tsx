@@ -10,8 +10,10 @@ type NewsPage = {
   items: NewsEvent[];
 }
 
-export default ({ items }: NewsPage) => (
+ const NewsPage = ({ items }: NewsPage) => (
   <DataProvider value={items}>
     <h1>Midnight Post</h1>
   </DataProvider>
 );
+
+export default NewsPage;
