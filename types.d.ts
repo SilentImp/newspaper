@@ -4,3 +4,10 @@ declare module "*module.css" {
   };
   export default styles;
 }
+
+declare module "csvjson" {
+  const csvjson: {
+    toObject: (data: unknown, options: unknown) => unknown;
+  };
+  export default csvjson;
+}
