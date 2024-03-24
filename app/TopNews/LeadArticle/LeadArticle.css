@@ -1,0 +1,36 @@
+.top-article {
+  display: block;
+  text-decoration: none;
+  color: #000;
+
+  &:hover .top-article__caption {
+    text-decoration: underline;
+  }
+
+  & .top-article__figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-block-end: 1rem;
+    -webkit-block-step-size: 1pt;
+    block-step-size: 1rem;
+    -webkit-block-step-insert: padding;
+    block-step-insert: padding;
+  }
+
+  & .top-article__image {
+    object-fit: cover;
+  }
+
+  & .top-article__caption {
+    position: absolute;
+    inset-block-end: .5rem;
+    inset-inline: .5rem;
+    padding-block: .5rem;
+    padding-inline: .75rem;
+    background-color: #fff8;
+    font-size: calc(var(--base-font-size) * var(--multiplier));
+    line-height: 1.4;
+  }
+
+}
