@@ -15,12 +15,14 @@ const TimeLineEvent = (
 ) => {
   const date = new Date(timestamp);
   let optionsTime: Intl.DateTimeFormatOptions = {
+    hourCycle: 'h23',
     hour: "2-digit",
     minute: "2-digit",
     timeZone: "Europe/Amsterdam",
   };
-  const time = Intl.DateTimeFormat('nl-NL', optionsTime).format(date);
-  const dateTime = Intl.DateTimeFormat('nl-NL', {
+  const time = Intl.DateTimeFormat('en', optionsTime).format(date);
+  const dateTime = Intl.DateTimeFormat('en', {
+    hourCycle: 'h23',
     dateStyle: "full",
     timeStyle: "full",
     timeZone: "Europe/Amsterdam",
